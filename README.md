@@ -6,11 +6,11 @@ Her vil du lære å kode våre kule LED displayer.
 Få en LED til å blinke med intervallene 1 sekund på og 1 sekund av.
 
 ## Steg 1: Definer noen neopixler @fullscreen
- Trykk på ``||Neopixel||`` fra blokkmenyen.
+ Trykk på ``||Neopixel: Neopixel||`` fra blokkmenyen.
 
- Klikk og dra inn blokken ``||sett strip til||`` og slipp den inn i ``||basic:ved start||`` blokken.
+ Klikk og dra inn blokken ``||Neopixel: sett strip til ||`` og slipp den inn i ``||basic: ved start ||`` blokken.
  
- Velg pinne ``||P0||`` og antall LED til ``||768||`` la format stå som ``||RGB (GRB)||``.
+ Velg pinne ``||Neopixel: P0 ||`` og antall LED til ``||Neopixel: 768 ||`` la format stå som ``||Neopixel: RGB (GRB) ||``.
 
  Denne blokken brukes for å velge hvilken pinne som er koblet til LED, hvor mange LED det er og hvilken type LED. 
 
@@ -20,9 +20,9 @@ let strip = neopixel.create(DigitalPin.P0, 768, NeoPixelMode.RGB)
 
 ```
 ## Steg 2: Slette minne i LED
-Trykk på ``||Neopixel||`` fra blokkmenyen.
+Trykk på ``||Neopixel: Neopixel||`` fra blokkmenyen.
 
-Klikk og dra inn blokken ``||strip.clear||`` plasser den under forrige blokk.
+Klikk og dra inn blokken ``||Neopixel: strip.clear ||`` plasser den under forrige blokk.
 
 Denne blokken sletter tidligere data inni lysdidodene.
 
@@ -35,9 +35,9 @@ strip.clear()
 
 ## Steg 3: Velge hvilken lysdidoe som skal lyse og hvilken farge
 
-Trykk på ``||Neopixel||`` fra blokkmenyen og klikk deretter ``||mer||``.
+Trykk på ``||Neopixel: Neopixel ||`` fra blokkmenyen og klikk deretter ``||Neopixel: mer ||``.
 
-Klikk og dra inn blokken ``||strip set_Pixel_Color at 0 to Red||`` plasser den i ``||basic: gjenta for alltid||``. 
+Klikk og dra inn blokken ``||Neopixel: strip set_Pixel_Color at 0 to Red ||`` plasser den i ``||basic: gjenta for alltid ||``. 
 
 Denne blokken brukes for å velge hvilken LED som skal lyse (0-767) og hvilken farge.
 
@@ -51,9 +51,9 @@ basic.forever(function () {
 ```
 
 ## Steg 4: Send informasjon til Neopixlene
-Trykk på ``||Neopixel||`` fra blokkmenyen.
+Trykk på ``||Neopixel: Neopixel ||`` fra blokkmenyen.
 
-Klikk og dra inn blokken ``||strip.show||`` plasser den under forrige blokk.
+Klikk og dra inn blokken ``||Neopixel: strip.show ||`` plasser den under forrige blokk.
 
 Denne blokken sender hvilken LED nummer og farge til LEDène som skal lyse.
 
@@ -68,9 +68,9 @@ basic.forever(function () {
 })
 ```
 ## Steg 5: Hvor lenge skal lysdidoen lyse
-Trykk på ``||Basis||`` fra blokkmenyen.
+Trykk på ``||basic: Basis ||`` fra blokkmenyen.
 
-Velg ``||basic.pause||`` og plaser denne under forrige blokk i ``||basic: gjenta for alltid||``.
+Velg ``||basic. pause (100) ||`` og plaser denne under forrige blokk i ``||basic: gjenta for alltid ||``.
 
 Sett pausen verdien til 1000 millisekunder som er 1 sekund.
 
@@ -86,9 +86,9 @@ basic.forever(function () {
 })
 ```
 ## Steg 6: Hvor lenge skal lysdidoen lyse
-Trykk på ``||Neopixel||`` fra blokkmenyen og klikk deretter ``||mer||``.
+Trykk på ``||Neopixel: Neopixel ||`` fra blokkmenyen og klikk deretter ``||Neopixel: mer ||``.
 
-Klikk og dra inn blokken ``||strip set_Pixel_Color at 0 to Red||`` plasser den nederst i ``||basic: gjenta for alltid||``. 
+Klikk og dra inn blokken ``||Neopixel: strip set_Pixel_Color at 0 to Red ||`` plasser den nederst i ``||basic: gjenta for alltid ||``. 
 
 Sett fargen til Black. Det er viktig å ha samme LED nummer på begge for å kunne slå av og på LED eller å skifte farge.
 
@@ -105,9 +105,9 @@ basic.forever(function () {
 })
 ```
 ## Steg 7: Send informasjon til Neopixlene
-Trykk på ``||Neopixel||`` fra blokkmenyen.
+Trykk på ``||Neopixel: Neopixel ||`` fra blokkmenyen.
 
-Klikk og dra inn blokken ``||strip.show||`` plasser den under forrige blokk.
+Klikk og dra inn blokken ``||Neopixel: strip.show ||`` plasser den under forrige blokk.
 
 Denne blokken sender hvilken LED nummer og farge til LEDène som skal skiftes.
 
